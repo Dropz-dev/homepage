@@ -228,3 +228,303 @@ h4 { font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 1rem; c
   .step { flex-direction: column; text-align: center; }
   .step-number { margin: 0 auto 1rem; }
 }
+
+/* Call to Action Section */
+.cta-section {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  background: white;
+  color: var(--color-primary);
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  background: var(--color-accent);
+  color: white;
+}
+
+/* Contact Page Specific Styles */
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.quick-contact {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: var(--color-secondary-bg);
+  border-radius: var(--radius);
+}
+
+.quick-contact h4 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.quick-contact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.quick-contact-buttons .btn {
+  text-align: center;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+}
+
+/* Location & Maps Section */
+.location-maps {
+  background: var(--color-secondary-bg);
+  padding: 4rem 0;
+}
+
+.location-maps h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--color-primary);
+}
+
+.maps-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.maps-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.address-card,
+.directions-card,
+.transport-card,
+.accessibility-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.address-card h3,
+.directions-card h3,
+.transport-card h3,
+.accessibility-card h3 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.address-details {
+  line-height: 1.6;
+}
+
+.directions-card ul,
+.transport-card ul,
+.accessibility-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.directions-card li,
+.transport-card li,
+.accessibility-card li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.directions-card li:last-child,
+.transport-card li:last-child,
+.accessibility-card li:last-child {
+  border-bottom: none;
+}
+
+.interactive-map h3 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.map-container-large {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+.map-container-large iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
+.map-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.map-actions .btn {
+  flex: 1;
+  text-align: center;
+  min-width: 150px;
+}
+
+.map-note {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.map-note small {
+  color: #856404;
+}
+
+/* Emergency Contact Section */
+.emergency-contact {
+  background: #fff5f5;
+  padding: 3rem 0;
+  border-top: 3px solid #ff6b6b;
+}
+
+.emergency-contact h2 {
+  text-align: center;
+  color: #d63031;
+  margin-bottom: 2rem;
+}
+
+.emergency-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.emergency-card {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-left: 4px solid #ff6b6b;
+}
+
+.emergency-card h3 {
+  color: #d63031;
+  margin-bottom: 1rem;
+}
+
+.emergency-card p {
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+.emergency-btn {
+  background: #ff6b6b;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin: 0.25rem;
+}
+
+.emergency-btn:hover {
+  background: #d63031;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(214, 48, 49, 0.3);
+}
+
+.emergency-btn.danger {
+  background: #e17055;
+  font-size: 1.1rem;
+  padding: 1.2rem 2rem;
+}
+
+.emergency-btn.danger:hover {
+  background: #d63031;
+}
+
+.emergency-numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Responsive Design for Contact Page */
+@media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .maps-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .map-actions {
+    flex-direction: column;
+  }
+  
+  .map-actions .btn {
+    width: 100%;
+  }
+  
+  .emergency-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .emergency-numbers {
+    align-items: center;
+  }
+}
